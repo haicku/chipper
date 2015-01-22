@@ -43,8 +43,8 @@ module.exports = function( grunt, projectName ) {
                       'git checkout master';
 
         child_process.exec( command, {cwd: '../' + property}, function( error1, stdout1, stderr1 ) {
-          assert( !error1, "error in " + command );
-          console.log( 'Finished checkout.' );
+          assert( !error1, "error in " + property + ': ' + command );
+          console.log( 'Finished checkout of ' + property + '.' );
           console.log( stdout1 );
           console.log( stderr1 );
           numCheckedOut = numCheckedOut + 1;

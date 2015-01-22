@@ -545,7 +545,7 @@ module.exports = function( grunt ) {
 			
 		  var splashFile = '../brand/images/splash_' + locales[i] + '.svg';console.info( 'loading splash ' + splashFile ); 
 		  if( ! grunt.file.exists( splashFile ) )
-			splashFile = '../brand/images/splash_en.svg';
+			splashFile = '../brand/images/splash.svg';
 			
           var splashDataURI = loadFileAsDataURI( splashFile );
         
